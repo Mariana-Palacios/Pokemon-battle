@@ -1,0 +1,13 @@
+@import '../abstracts/variables';
+
+.nav{
+    text-align: center;
+    background-color: $yellow-p;
+    height: auto;
+    width: 100%;
+    .icon{
+        font-size: 150px;
+        color: $blue-p;
+    }
+}
+

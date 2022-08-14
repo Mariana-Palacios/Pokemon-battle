@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Sarpanch&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sarpanch&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sarpanch&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: 0;
+          box-sizing: 0;
+  font-family: "Sarpanch", sans-serif;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-j-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-j-s-b {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-j-f-s {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.flex-a-i {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-f-d-c {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-f-w {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.text-a-c {
+  text-align: center;
+}
+
+.nav {
+  text-align: center;
+  background-color: #FFCC00;
+  height: auto;
+  width: 100%;
+}
+
+.nav .icon {
+  font-size: 150px;
+  color: #0A60AF;
+}
+
+.pokemon {
+  margin: 10px;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.pokemon .type {
+  margin: 0px 10px;
+  padding: 10px;
+  background-color: black;
+  color: white !important;
+  border-radius: 5px;
+}
+
+.pokemon:hover {
+  background-color: black;
+  color: white;
+}
+
+.pokemon:hover .type {
+  background-color: white;
+  color: black !important;
+}
+
+.team {
+  border-color: 2px solid black;
+  border-radius: 20%;
+}
+/*# sourceMappingURL=index.css.map */

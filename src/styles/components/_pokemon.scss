@@ -1,0 +1,22 @@
+.pokemon{
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    .type{
+        margin: 0px 10px;
+        padding: 10px;
+        background-color: black;
+        color: white !important;
+        border-radius: 5px;
+    }
+}
+
+.pokemon:hover{
+    background-color: black;
+    color: white; 
+    .type{
+        background-color: white;
+        color: black !important;
+    }
+}
