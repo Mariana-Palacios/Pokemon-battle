@@ -9,10 +9,10 @@ const PokemonCore = () => {
       return view
     }
     return (
-      <>
-        {view?<Pokemon pokemonNumber={1} changeBoolean={changeBoolean}/>:<PokemonChoose/>}
+      <div>
+        {view?<Pokemon pokemonNumber={650} changeBoolean={changeBoolean}/>:<PokemonChoose changeBoolean={changeBoolean}/>}
         {console.log(view)}
-      </>
+      </div>
     )
 }
 

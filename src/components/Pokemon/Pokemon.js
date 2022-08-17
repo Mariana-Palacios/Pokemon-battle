@@ -28,7 +28,7 @@ const Pokemon =(props)=>{
   }else{
     return(
       <div className="pokemon flex flex-j-c flex-f-d-c flex-a-i">
-        <img src={apiValue['sprites']['front_default']} alt={apiValue['forms'][0]['name']}/>
+        <img src={apiValue['sprites']['versions']['generation-v']['black-white']['animated']['front_default']?apiValue['sprites']['versions']['generation-v']['black-white']['animated']['front_default']:apiValue['sprites']['versions']['generation-v']['black-white']['front_default']} alt={apiValue['forms'][0]['name']}/>
         <h3>N.°{pokemonNumber}</h3>
         <h1><TbPokeball/>{apiValue['forms'][0]['name']}</h1>
         <div className='flex flex-f-w'>
