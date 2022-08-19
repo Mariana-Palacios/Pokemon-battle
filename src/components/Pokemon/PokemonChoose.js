@@ -1,21 +1,24 @@
-import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton'
+import Dropdown from 'react-bootstrap/Dropdown'
 
 
-const PokemonChoose = ({changeBoolean}) => {
-  
+const PokemonChoose = ({changeBoolean}) =>{
+    let pokedex = []
+    for(let i = 1; i <=802; i++) {
+        pokedex[i-1] = i
+    }
   return (
-    <Dropdown>
-      <Dropdown.Toggle variant="success" id="dropdown-basic">
-        Pokemon
-      </Dropdown.Toggle>
-
-      <Dropdown.Menu onClick={changeBoolean}>
-        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-      </Dropdown.Menu>
-    </Dropdown>
-  );
+      <DropdownButton
+        // bsStyle="default"
+        // bsSize="small"
+        // style={{ maxHeight: "28px" }}
+        // title={"Qty"}
+        // key={1}
+        // id="dropdown-size-small"
+      >
+        <Dropdown.Item eventKey="1" onClick={changeBoolean}>eevee</Dropdown.Item>
+      </DropdownButton>
+    )
 }
 
 export default PokemonChoose;

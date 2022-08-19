@@ -92,6 +92,11 @@
   color: black !important;
 }
 
+.dropdown-menu {
+  height: 70px;
+  overflow-y: scroll;
+}
+
 .team {
   border-color: 2px solid black;
   border-radius: 20%;
