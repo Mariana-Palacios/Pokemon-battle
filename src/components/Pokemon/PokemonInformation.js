@@ -1,4 +1,5 @@
 import { TbPokeball } from 'react-icons/tb';
+
 const PokemonInformation = ({apiValue,changeBoolean}) =>{
     return(
         <div className="pokemon flex flex-j-c flex-f-d-c flex-a-i">

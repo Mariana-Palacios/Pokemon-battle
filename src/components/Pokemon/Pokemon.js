@@ -1,21 +1,11 @@
 import React, {useState, useEffect} from 'react';
-import PokemonChoose from './PokemonChoose';
-import PokemonInformation from './PokemonInformation';
-import Loading from '../Loading';
+import Loading from '../Loading'
+import { TbPokeball } from 'react-icons/tb';
 
-const Pokemon =()=>{
+const Pokemon =({name,changeBoolean})=>{
   const [apiValue, setApiValue] = useState([])
   const [loading, setLoading] = useState(true)
-  const [name,setName] = useState("")
-  const [view, setView] = useState(true)
   const url = `https://pokeapi.co/api/v2/pokemon/${name}`
-  const changeBoolean = (e) =>{
-    setView(!view)
-    if(name!==""){
-      setName("")
-    }
-    setName(e.target.textContent)
-  }
   const fetchApi = async () =>{
     setLoading(true)
     try{
@@ -23,7 +13,6 @@ const Pokemon =()=>{
       const responseJSON = await response.json()
       setApiValue(responseJSON)
       setLoading(false)
-      console.log(apiValue)
     }catch(error){
       setLoading(true) 
     }
@@ -35,11 +24,16 @@ const Pokemon =()=>{
     return(
       <Loading/>
     )
-  }else{
+  } else{
     return(
-      <div>
-        {view?<PokemonChoose changeBoolean={changeBoolean}/>:(name==="")?<Loading/>:<PokemonInformation changeBoolean={changeBoolean} apiValue={apiValue}/>}
-        {console.log(url)}
+      <div className="pokemon flex flex-j-c flex-f-d-c flex-a-i">
+        <img src={apiValue['sprites']['versions']['generation-v']['black-white']['animated']['front_default']?apiValue['sprites']['versions']['generation-v']['black-white']['animated']['front_default']:apiValue['sprites']['versions']['generation-v']['black-white']['front_default']} alt={apiValue['forms'][0]['name']}/>
+        {/* <h3>N.°{}</h3> */}
+        <h1><TbPokeball/>{apiValue['forms'][0]['name']}</h1>
+        <div className='flex flex-f-w'>
+        {apiValue['types'].map((type, i) => <p className='type'>{apiValue['types'][i]['type']['name']}</p>)}
+        </div>
+        <button onClick={changeBoolean}>change</button>
       </div>
     )
   }
