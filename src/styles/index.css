@@ -1,12 +1,15 @@
+@import url("//db.onlinewebfonts.com/c/3ada9815c06d2619d52d16a5601c96b2?family=Early+GameBoy");
 @import url("https://fonts.googleapis.com/css2?family=Sarpanch&display=swap");
+@import url("//db.onlinewebfonts.com/c/3ada9815c06d2619d52d16a5601c96b2?family=Early+GameBoy");
 @import url("https://fonts.googleapis.com/css2?family=Sarpanch&display=swap");
+@import url("//db.onlinewebfonts.com/c/3ada9815c06d2619d52d16a5601c96b2?family=Early+GameBoy");
 @import url("https://fonts.googleapis.com/css2?family=Sarpanch&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: 0;
           box-sizing: 0;
-  font-family: "Sarpanch", sans-serif;
+  font-family: "Early GameBoy";
 }
 
 .flex {
@@ -55,6 +58,159 @@
   text-align: center;
 }
 
+.bug {
+  background-color: #9EAC19;
+  color: #fff;
+  border-radius: 15px;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.dark {
+  background-color: #46352C;
+  color: #fff;
+  border-radius: 15px;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.dragon {
+  background-color: #715DD6;
+  color: #fff;
+  border-radius: 15px;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.electric {
+  background-color: #F6B01C;
+  color: #fff;
+  border-radius: 15px;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.fighting {
+  background-color: #79341E;
+  color: #fff;
+  border-radius: 15px;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.fire {
+  background-color: #DD3409;
+  color: #fff;
+  border-radius: 15px;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.flying {
+  background-color: #8495E9;
+  color: #fff;
+  border-radius: 15px;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.ghost {
+  background-color: #5858A5;
+  color: #fff;
+  border-radius: 15px;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.grass {
+  background-color: #71C035;
+  color: #fff;
+  border-radius: 15px;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.ground {
+  background-color: #D0B154;
+  color: #fff;
+  border-radius: 15px;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.ice {
+  background-color: #78D7F6;
+  color: #fff;
+  border-radius: 15px;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.normal {
+  background-color: #C4C1B9;
+  color: #fff;
+  border-radius: 15px;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.poison {
+  background-color: #8E438F;
+  color: #fff;
+  border-radius: 15px;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.psychic {
+  background-color: #E7467C;
+  color: #fff;
+  border-radius: 15px;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.rock {
+  background-color: #B49D55;
+  color: #fff;
+  border-radius: 15px;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.steel {
+  background-color: #B4B4C2;
+  color: #fff;
+  border-radius: 15px;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.water {
+  background-color: #2D90F2;
+  color: #fff;
+  border-radius: 15px;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+
 .nav {
   text-align: center;
   background-color: #FFCC00;
@@ -93,8 +249,17 @@
 }
 
 .dropdown-menu {
-  height: 70px;
+  height: 40vh;
+  width: 100%;
   overflow-y: scroll;
+  font-size: 16px;
+  color: white;
+  background: black !important;
+}
+
+.dropdown {
+  background: black !important;
+  width: 100px;
 }
 
 .team {

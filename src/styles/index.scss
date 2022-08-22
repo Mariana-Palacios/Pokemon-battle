@@ -2,6 +2,7 @@
 
 // abstracts
 @import './abstracts/base';
+@import './abstracts/function';
 @import './abstracts/variables';
 
 // components
@@ -9,3 +10,7 @@
 @import './components/pokemon';
 @import './components/pokemonChoose';
 @import './components/team';
+
+// bootstrap
+// @import "~bootstrap/scss/bootstrap";
+

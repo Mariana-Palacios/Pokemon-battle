@@ -1,9 +1,8 @@
 import { SiPokemon } from "react-icons/si";
 
-const Nav = (props) => {
-    // const {name, image, number} = props;
+const Nav = () => {
     return (
-      <nav className="nav">
+      <nav className="nav flex flex-j-c">
         <SiPokemon className="icon"/>
       </nav>
     );

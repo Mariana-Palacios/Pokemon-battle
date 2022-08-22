@@ -1,10 +1,12 @@
 @import "./variables"; 
+@import "./function";
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: 0;
-    font-family: $sarpanch;
+    // font-family: $sarpanch;
+    font-family: $gameBoy;
 }
 
 .flex{
@@ -32,3 +34,56 @@
 .text-a-c{
     text-align: center;
 }
+
+
+    .bug{
+        @include typePokemon($bug)
+    }
+    .dark{
+        @include typePokemon($dark)
+    }
+    .dragon{
+        @include typePokemon($dragon)
+    }
+    .electric{
+        @include typePokemon($electric)
+    }
+    .fighting{
+        @include typePokemon($fighting)
+    }
+    .fire{
+        @include typePokemon($fire)
+    }
+    .flying{
+        @include typePokemon($fly)
+    }
+    .ghost{
+        @include typePokemon($ghost)
+    }
+    .grass{
+        @include typePokemon($grass)
+    }
+    .ground{
+        @include typePokemon($ground)
+    }
+    .ice{
+        @include typePokemon($ice)
+    }
+    .normal{
+        @include typePokemon($normal)
+    }
+    .poison{
+        @include typePokemon($poison)
+    }
+    .psychic{
+        @include typePokemon($psychic)
+    }
+    .rock{
+        @include typePokemon($rock)
+    }
+    .steel{
+        @include typePokemon($steel)
+    }
+    .water{
+        @include typePokemon($water)
+    }

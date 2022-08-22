@@ -1,10 +1,32 @@
 // Fonts
+@import url('//db.onlinewebfonts.com/c/3ada9815c06d2619d52d16a5601c96b2?family=Early+GameBoy');
 @import url('https://fonts.googleapis.com/css2?family=Sarpanch&display=swap');
 
 // Name fonts
 $sarpanch:'Sarpanch', sans-serif;
+$gameBoy: "Early GameBoy"; 
 
 // Colors
 // Title pokemn
 $blue-p: #0A60AF;
 $yellow-p: #FFCC00;
+
+// type pokemon
+$bug:#9EAC19;
+$dark: #46352C;
+$dragon: #715DD6;
+$electric: #F6B01C;
+$fighting: #79341E;
+$fire:#DD3409; 
+$fly: #8495E9;
+$ghost: #5858A5;
+$grass: #71C035;
+$ground: #D0B154;
+$ice: #78D7F6;
+$normal:#C4C1B9;
+$poison: #8E438F;
+$psychic: #E7467C;
+$rock: #B49D55;  
+$steel: #B4B4C2;
+$water: #2D90F2; 
+
