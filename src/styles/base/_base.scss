@@ -97,7 +97,7 @@
         @include pixel-box($corner-size: 1, $border-size: 4px, $background-color:$fairy)
     }
 
-    .simple-pixel-border{
+    .simple-pixel-border,.simple-pixel-border-with-out-hover{
         // @include pixel-borders()
         @include pixel-box($corner-size: 1, $border-size: 4px, $background-color:white)
     }
