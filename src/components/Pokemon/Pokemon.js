@@ -36,7 +36,7 @@ const Pokemon =({name,changeBoolean,option})=>{
           <div className='flex'>
           {apiValue['types'].map((type, i) => <p className={`type ${apiValue['types'][i]['type']['name']}`}>{apiValue['types'][i]['type']['name']}</p>)}
           </div>
-          <button onClick={changeBoolean} className='simple-pixel-border'>change</button>
+          <button onClick={changeBoolean} className='simple-pixel-button'>change</button>
         </div>
       )
     }

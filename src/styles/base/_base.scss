@@ -103,5 +103,20 @@
     }
     .simple-pixel-border:hover{
         color: white;
-        @include pixel-box($corner-size: 1, $border-size: 4px, $background-color:black)
+        @include pixel-box($corner-size: 1, $border-size: 4px, $background-color:#232323);
+        .simple-pixel-button{
+            color: black;
+            @include pixel-box($corner-size: 1, $border-size: 4px, $background-color:white)
+        }
+    }
+
+    .simple-pixel-button{
+        position: absolute;
+        z-index: 1;
+        color: white;
+        @include pixel-box($corner-size: 1, $border-size: 4px, $background-color:#232323)
+    }
+
+    button{
+        cursor: pointer;
     }
