@@ -16,11 +16,11 @@
 .pixel-borders--1 {
   border-style: solid;
   border-width: 4px;
-  border-color: #000;
+  border-color: #CCCCCC;
   border-image-slice: 2;
   border-image-width: 1;
   border-image-outset: 0;
-  border-image-source: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6'><path d='M0 2h2v2H0zM2 0h2v2H2zM4 2h2v2H4zM2 4h2v2H2z' fill='%23000' /></svg>");
+  border-image-source: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6'><path d='M0 2h2v2H0zM2 0h2v2H2zM4 2h2v2H4zM2 4h2v2H2z' fill='%23CCCCCC' /></svg>");
 }
 
 @supports (border-image-source: none) {
@@ -32,11 +32,11 @@
 .pixel-borders--1-inset {
   border-style: solid;
   border-width: 4px;
-  border-color: #000;
+  border-color: #CCCCCC;
   border-image-slice: 2;
   border-image-width: 1;
   border-image-outset: 0;
-  border-image-source: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6'><path d='M0 2h2v2H0zM2 0h2v2H2zM4 2h2v2H4zM2 4h2v2H2z' fill='%23000' /></svg>");
+  border-image-source: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6'><path d='M0 2h2v2H0zM2 0h2v2H2zM4 2h2v2H4zM2 4h2v2H2z' fill='%23CCCCCC' /></svg>");
   position: relative;
 }
 
@@ -61,11 +61,11 @@
 .pixel-borders--2 {
   border-style: solid;
   border-width: 4px;
-  border-color: #000;
+  border-color: #CCCCCC;
   border-image-slice: 4;
   border-image-width: 2;
   border-image-outset: 0;
-  border-image-source: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12'><path d='M2 2h2v2H2zM4 0h2v2H4zM10 4h2v2h-2zM0 4h2v2H0zM6 0h2v2H6zM8 2h2v2H8zM8 8h2v2H8zM6 10h2v2H6zM0 6h2v2H0zM10 6h2v2h-2zM4 10h2v2H4zM2 8h2v2H2z' fill='%23000' /></svg>");
+  border-image-source: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12'><path d='M2 2h2v2H2zM4 0h2v2H4zM10 4h2v2h-2zM0 4h2v2H0zM6 0h2v2H6zM8 2h2v2H8zM8 8h2v2H8zM6 10h2v2H6zM0 6h2v2H0zM10 6h2v2h-2zM4 10h2v2H4zM2 8h2v2H2z' fill='%23CCCCCC' /></svg>");
 }
 
 @supports (border-image-source: none) {
@@ -77,11 +77,11 @@
 .pixel-borders--2-inset {
   border-style: solid;
   border-width: 4px;
-  border-color: #000;
+  border-color: #CCCCCC;
   border-image-slice: 4;
   border-image-width: 2;
   border-image-outset: 0;
-  border-image-source: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12'><path d='M2 2h2v2H2zM4 0h2v2H4zM10 4h2v2h-2zM0 4h2v2H0zM6 0h2v2H6zM8 2h2v2H8zM8 8h2v2H8zM6 10h2v2H6zM0 6h2v2H0zM10 6h2v2h-2zM4 10h2v2H4zM2 8h2v2H2z' fill='%23000' /></svg>");
+  border-image-source: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12'><path d='M2 2h2v2H2zM4 0h2v2H4zM10 4h2v2h-2zM0 4h2v2H0zM6 0h2v2H6zM8 2h2v2H8zM8 8h2v2H8zM6 10h2v2H6zM0 6h2v2H0zM10 6h2v2h-2zM4 10h2v2H4zM2 8h2v2H2z' fill='%23CCCCCC' /></svg>");
 }
 
 @supports (border-image-source: none) {
@@ -1268,8 +1268,14 @@ button {
   font-weight: bold;
 }
 
-.generations h1, .generations h2 {
+.generations h1 {
   font-family: "Sarpanch", sans-serif;
+}
+
+.generations h2 {
+  font-family: "Early GameBoy";
+  font-size: 20px;
+  color: #CCCCCC;
 }
 
 .generations .generation {

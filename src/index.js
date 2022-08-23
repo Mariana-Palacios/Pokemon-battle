@@ -4,6 +4,7 @@ import './styles/index.css'
 import Nav from './components/Nav/Nav'
 import PokemonCore from './components/Pokemon/PokemonCore';
 import Generation from './components/Pokemon/Generation';
+import Sound from './components/Nav/Sound'
 
 
 const Main = () => {

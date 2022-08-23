@@ -4,8 +4,13 @@
         text-align: center;
         font-weight: bold;
     }
-    h1,h2{
+    h1{
         font-family: $sarpanch;
+    }
+    h2{
+        font-family: $gameBoy;
+        font-size:20px;
+        color: #CCCCCC;
     }
     .generation{
         margin: 20px;
