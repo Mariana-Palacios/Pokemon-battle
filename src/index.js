@@ -4,14 +4,14 @@ import './styles/index.css'
 import Nav from './components/Nav/Nav'
 import PokemonCore from './components/Pokemon/PokemonCore';
 import Generation from './components/Pokemon/Generation';
-import Sound from './components/Nav/Sound'
+import Sound from './components/Sound'
 
 
 const Main = () => {
   return (
     <div >
       <Nav/>
-      <Generation/>
+      <Sound change={false}/>
       <div className='flex flex-j-c flex-f-w'>
         <PokemonCore/>
         <PokemonCore/>

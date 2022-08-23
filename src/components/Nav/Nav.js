@@ -1,4 +1,4 @@
-import Sound from './Sound'
+import Sound from '../Sound'
 import { SiPokemon } from "react-icons/si";
 
 const Nav = () => {
@@ -6,7 +6,7 @@ const Nav = () => {
       // <nav className="nav flex flex-j-s-b">
       <nav className="nav flex flex-j-s-b">
         <SiPokemon className="icon"/>
-        <Sound/>
+        <Sound change={true}/>
       </nav>
     );
   }

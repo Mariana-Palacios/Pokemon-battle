@@ -1259,6 +1259,36 @@ button {
   cursor: pointer;
 }
 
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
 .generations {
   margin: 20px;
 }
@@ -1285,6 +1315,19 @@ button {
 .generations .generation img {
   height: 35px;
   width: 35px;
+}
+
+.generations .generation:hover {
+  cursor: pointer;
+}
+
+.generations .generation:hover h2 {
+  color: black;
+}
+
+.generations .generation:hover img {
+  -webkit-animation: float 0.4s ease-in-out;
+          animation: float 0.4s ease-in-out;
 }
 
 .nav {
@@ -1360,15 +1403,78 @@ button {
 .dropdown-toggle {
   margin: 0px 20px;
   width: 200px;
-  background-color: black;
-  border-radius: 1px !important;
-  border: 1px solid #6F6F6F;
+  color: white;
+  border-style: solid;
+  border-width: 4px;
+  border-color: black;
+  border-image-slice: 2;
+  border-image-width: 1;
+  border-image-outset: 0;
+  border-image-source: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6'><path d='M0 2h2v2H0zM2 0h2v2H2zM4 2h2v2H4zM2 4h2v2H2z' fill='black' /></svg>");
+  position: relative;
+  background-color: #232323;
+}
+
+@supports (border-image-source: none) {
+  .dropdown-toggle {
+    border-radius: 14px;
+  }
+}
+
+.dropdown-toggle::after {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: inset -4px -4px #0a0a0a;
+          box-shadow: inset -4px -4px #0a0a0a;
+}
+
+.dropdown-toggle:hover, .dropdown-toggle:focus {
+  background-color: #161616;
 }
 
 .dropdown-toggle:hover {
-  color: #6F6F6F;
+  color: black;
+  border-style: solid;
+  border-width: 4px;
+  border-color: #cccccc;
+  border-image-slice: 2;
+  border-image-width: 1;
+  border-image-outset: 0;
+  border-image-source: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6'><path d='M0 2h2v2H0zM2 0h2v2H2zM4 2h2v2H4zM2 4h2v2H2z' fill='%23cccccc' /></svg>");
+  position: relative;
   background-color: white;
-  border: 1px solid #6F6F6F;
+}
+
+@supports (border-image-source: none) {
+  .dropdown-toggle:hover {
+    border-radius: 14px;
+  }
+}
+
+.dropdown-toggle:hover::after {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: inset -4px -4px #e6e6e6;
+          box-shadow: inset -4px -4px #e6e6e6;
+}
+
+.dropdown-toggle:hover:hover, .dropdown-toggle:hover:focus {
+  background-color: #f2f2f2;
+}
+
+.dropdown-toggle:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .sound {
