@@ -19,7 +19,7 @@ const PokemonChoose = ({changeBoolean}) =>{
           >
             {pokedex.map((pokemon,i)=>{
               return(
-                <Dropdown.Item >
+                <Dropdown.Item onClick={changeBoolean}>
                   <Pokemon changeBoolean={changeBoolean} name={pokemon} option={false} />
                 </Dropdown.Item>
               )

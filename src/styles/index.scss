@@ -1,14 +1,16 @@
 // base
+@import './base/base';
 
 // abstracts
-@import './abstracts/base';
 @import './abstracts/function';
 @import './abstracts/variables';
 
 // components
+@import './components/generation';
 @import './components/nav';
 @import './components/pokemon';
 @import './components/pokemonChoose';
+@import './components/sound';
 @import './components/team';
 
 // bootstrap

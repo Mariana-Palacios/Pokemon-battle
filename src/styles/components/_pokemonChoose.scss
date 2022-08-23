@@ -2,12 +2,33 @@
     height: 40vh;
     width: 100%;
     overflow-y: scroll;
-    font-size: 16px;
-    color: white;
-    background: black !important;
 }
 
-.dropdown{
-  background: black !important;
-  width: 100px;
+.dropdown-item{
+  padding: 10px 0px;
+    h1{
+      font-size: 18px !important;
+      color: $gray;
+    }
+}
+
+.dropdown-item:hover{
+  background-color: black;
+  h1{
+    color: white;
+  }
+}
+
+.dropdown-toggle{
+  margin:0px 20px;
+  width: 200px;
+  background-color: black;
+  border-radius: 1px !important;
+  border: 1px solid $gray;
+}
+
+.dropdown-toggle:hover{
+  color: $gray;
+  background-color: white;
+  border: 1px solid $gray;
 }

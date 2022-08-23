@@ -1,0 +1,17 @@
+.generations{
+    margin: 20px;
+    h1{
+        text-align: center;
+        font-weight: bold;
+    }
+    h1,h2{
+        font-family: $sarpanch;
+    }
+    .generation{
+        margin: 20px;
+        img{
+            height: 35px;
+            width: 35px;
+        }
+    }
+}
