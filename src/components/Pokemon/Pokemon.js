@@ -27,7 +27,7 @@ const Pokemon =({name,changeBoolean,option})=>{
   } else{
     if(option){
       return(
-        <div className="pokemon flex flex-j-c flex-f-d-c flex-a-i ">
+        <div className="pokemon flex flex-j-c flex-f-d-c flex-a-i simple-pixel-border">
           <div className='image flex flex-j-c flex-a-i'>
             <img src={apiValue['sprites']['versions']['generation-v']['black-white']['animated']['front_default']?apiValue['sprites']['versions']['generation-v']['black-white']['animated']['front_default']:apiValue['sprites']['versions']['generation-v']['black-white']['front_default']} alt={apiValue['forms'][0]['name']}/>
           </div>
@@ -36,7 +36,7 @@ const Pokemon =({name,changeBoolean,option})=>{
           <div className='flex'>
           {apiValue['types'].map((type, i) => <p className={`type ${apiValue['types'][i]['type']['name']}`}>{apiValue['types'][i]['type']['name']}</p>)}
           </div>
-          <button onClick={changeBoolean}>change</button>
+          <button onClick={changeBoolean} className='simple-pixel-border'>change</button>
         </div>
       )
     }

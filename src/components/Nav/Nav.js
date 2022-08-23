@@ -4,7 +4,7 @@ import { SiPokemon } from "react-icons/si";
 const Nav = () => {
     return (
       // <nav className="nav flex flex-j-s-b">
-      <nav className="nav flex">
+      <nav className="nav flex flex-j-s-b">
         <SiPokemon className="icon"/>
         <Sound/>
       </nav>

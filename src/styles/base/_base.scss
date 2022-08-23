@@ -1,6 +1,10 @@
 @import "../abstracts/function"; 
 @import "../abstracts/variables"; 
 
+// pixel border
+@import "../../../node_modules/pixel-borders/src/styles/pixel-borders.scss";
+@import "../../../node_modules/pixel-borders/src/styles/pixel-borders/pixel-borders-mixins";
+
 *{
     margin: 0;
     padding: 0;
@@ -37,53 +41,67 @@
 
 
     .bug{
-        @include typePokemon($bug)
+        @include pixel-box($corner-size: 1, $border-size: 4px, $background-color:$bug)
     }
     .dark{
-        @include typePokemon($dark)
+        @include pixel-box($corner-size: 1, $border-size: 4px, $background-color:$dark)
     }
     .dragon{
-        @include typePokemon($dragon)
+        @include pixel-box($corner-size: 1, $border-size: 4px, $background-color:$dragon)
     }
     .electric{
-        @include typePokemon($electric)
+        @include pixel-box($corner-size: 1, $border-size: 4px, $background-color:$electric)
     }
     .fighting{
-        @include typePokemon($fighting)
+        @include pixel-box($corner-size: 1, $border-size: 4px, $background-color:$fighting)
     }
     .fire{
-        @include typePokemon($fire)
+        @include pixel-box($corner-size: 1, $border-size: 4px, $background-color: $fire);
     }
     .flying{
-        @include typePokemon($fly)
+        @include pixel-box($corner-size: 1, $border-size: 4px, $background-color:$fly)
     }
     .ghost{
-        @include typePokemon($ghost)
+        @include pixel-box($corner-size: 1, $border-size: 4px, $background-color:$ghost)
     }
     .grass{
-        @include typePokemon($grass)
+        @include pixel-box($corner-size: 1, $border-size: 4px, $background-color:$grass)
     }
     .ground{
-        @include typePokemon($ground)
+        @include pixel-box($corner-size: 1, $border-size: 4px, $background-color:$ground)
     }
     .ice{
-        @include typePokemon($ice)
+        @include pixel-box($corner-size: 1, $border-size: 4px, $background-color:$ice)
     }
     .normal{
-        @include typePokemon($normal)
+        @include pixel-box($corner-size: 1, $border-size: 4px, $background-color:$normal)
     }
     .poison{
-        @include typePokemon($poison)
+        @include pixel-box($corner-size: 1, $border-size: 4px, $background-color:$poison)
     }
     .psychic{
-        @include typePokemon($psychic)
+        @include pixel-box($corner-size: 1, $border-size: 4px, $background-color:$psychic)
     }
     .rock{
-        @include typePokemon($rock)
+        // @include pixel-box($corner-size: 1, $border-size: 4px, $background-color:$rock)
+        @include pixel-box($corner-size: 1, $border-size: 1px, $background-color: $rock);
     }
+          
     .steel{
-        @include typePokemon($steel)
+        @include pixel-box($corner-size: 1, $border-size: 4px, $background-color:$steel)
     }
     .water{
-        @include typePokemon($water)
+        @include pixel-box($corner-size: 1, $border-size: 4px, $background-color:$water)
+    }
+    .fairy{
+        @include pixel-box($corner-size: 1, $border-size: 4px, $background-color:$fairy)
+    }
+
+    .simple-pixel-border{
+        // @include pixel-borders()
+        @include pixel-box($corner-size: 1, $border-size: 4px, $background-color:white)
+    }
+    .simple-pixel-border:hover{
+        color: white;
+        @include pixel-box($corner-size: 1, $border-size: 4px, $background-color:black)
     }
