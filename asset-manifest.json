@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/Pokemon-battle/static/css/main.7e00804d.css",
-    "main.js": "/Pokemon-battle/static/js/main.676d9645.js",
+    "main.css": "/Pokemon-battle/static/css/main.7c5aba6a.css",
+    "main.js": "/Pokemon-battle/static/js/main.1b4c883c.js",
     "static/js/845.1bee806a.chunk.js": "/Pokemon-battle/static/js/845.1bee806a.chunk.js",
     "static/media/pokemon.mp3": "/Pokemon-battle/static/media/pokemon.6c2d70c1a46b5d3cd207.mp3",
+    "static/media/chooseSound.mp3": "/Pokemon-battle/static/media/chooseSound.c97ff75d10e561ec3b32.mp3",
     "index.html": "/Pokemon-battle/index.html",
-    "main.7e00804d.css.map": "/Pokemon-battle/static/css/main.7e00804d.css.map",
-    "main.676d9645.js.map": "/Pokemon-battle/static/js/main.676d9645.js.map",
+    "main.7c5aba6a.css.map": "/Pokemon-battle/static/css/main.7c5aba6a.css.map",
+    "main.1b4c883c.js.map": "/Pokemon-battle/static/js/main.1b4c883c.js.map",
     "845.1bee806a.chunk.js.map": "/Pokemon-battle/static/js/845.1bee806a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e00804d.css",
-    "static/js/main.676d9645.js"
+    "static/css/main.7c5aba6a.css",
+    "static/js/main.1b4c883c.js"
   ]
 }
