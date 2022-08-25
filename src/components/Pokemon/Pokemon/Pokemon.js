@@ -19,7 +19,7 @@ const Pokemon =({name,changeBoolean,option})=>{
   }
   useEffect(()=>{
     fetchApi()
-  }, [])
+  },[] )
   if(loading){
     return(
       <Loading/>

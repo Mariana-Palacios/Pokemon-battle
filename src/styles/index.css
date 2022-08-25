@@ -2,8 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Sarpanch&display=swap");
 @import url("//db.onlinewebfonts.com/c/3ada9815c06d2619d52d16a5601c96b2?family=Early+GameBoy");
 @import url("https://fonts.googleapis.com/css2?family=Sarpanch&display=swap");
-@import url("//db.onlinewebfonts.com/c/3ada9815c06d2619d52d16a5601c96b2?family=Early+GameBoy");
-@import url("https://fonts.googleapis.com/css2?family=Sarpanch&display=swap");
 .pixel-borders {
   position: relative;
   display: inline-block;
@@ -1259,75 +1257,59 @@ button {
   cursor: pointer;
 }
 
-@-webkit-keyframes float {
-  0% {
-    -webkit-transform: translatey(0px);
-            transform: translatey(0px);
-  }
-  50% {
-    -webkit-transform: translatey(-20px);
-            transform: translatey(-20px);
-  }
-  100% {
-    -webkit-transform: translatey(0px);
-            transform: translatey(0px);
-  }
+.background:after {
+  content: ' ';
+  border-top: 100vh solid black;
+  border-right: 100vw solid transparent;
+  width: 0;
+  position: absolute;
+  top: 0;
+  z-index: -1;
 }
 
-@keyframes float {
-  0% {
-    -webkit-transform: translatey(0px);
-            transform: translatey(0px);
-  }
-  50% {
-    -webkit-transform: translatey(-20px);
-            transform: translatey(-20px);
-  }
-  100% {
-    -webkit-transform: translatey(0px);
-            transform: translatey(0px);
-  }
+.container_pokemon {
+  position: relative;
+  background-color: aqua;
+  width: 60vw;
+  height: 100vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
-.generations {
-  margin: 20px;
+.container_pokemon-up {
+  position: relative;
+  background-color: crimson;
+  height: 50vh;
+  width: 50%;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
 }
 
-.generations h1 {
-  text-align: center;
-  font-weight: bold;
+.eevee, .gengar, .charmander {
+  position: absolute;
+  z-index: 1;
+  height: auto;
 }
 
-.generations h1 {
-  font-family: "Sarpanch", sans-serif;
+.charmander {
+  width: 45%;
+  bottom: 0;
 }
 
-.generations h2 {
-  font-family: "Early GameBoy";
-  font-size: 20px;
-  color: #CCCCCC;
+.gengar {
+  width: 20%;
+  right: 0;
+  top: 30%;
+  left: 50%;
 }
 
-.generations .generation {
-  margin: 20px;
-}
-
-.generations .generation img {
-  height: 35px;
-  width: 35px;
-}
-
-.generations .generation:hover {
-  cursor: pointer;
-}
-
-.generations .generation:hover h2 {
-  color: black;
-}
-
-.generations .generation:hover img {
-  -webkit-animation: float 0.4s ease-in-out;
-          animation: float 0.4s ease-in-out;
+.eevee {
+  width: 10%;
+  right: 0;
+  z-index: 10;
+  top: 50%;
+  left: 47%;
 }
 
 .nav {
@@ -1489,10 +1471,5 @@ button {
   height: 30px;
   width: 30px;
   color: white;
-}
-
-.team {
-  border-color: 2px solid black;
-  border-radius: 20%;
 }
 /*# sourceMappingURL=index.css.map */

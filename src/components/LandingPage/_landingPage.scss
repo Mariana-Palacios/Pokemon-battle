@@ -1,0 +1,62 @@
+// div {
+//     width: 100vw;
+//     height: 100vh;
+//     background-color: rgb(255, 20, 239);
+//   }
+.background:after {
+    content: ' ';
+    border-top: 100vh solid black;
+    border-right: 100vw solid transparent;
+    width: 0;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.container_pokemon{
+    position: relative;
+    background-color: aqua;
+    width: 60vw;
+    height: 100vh;
+    left: 50%;
+    // top: -50%;
+    // transform: translateY(-50%);
+    transform: translateX(-50%);
+}
+
+.container_pokemon-up{
+    position: relative;
+    background-color: crimson;
+    height: 50vh;
+    width: 50%;
+    transform: translateX(100%);
+}
+
+
+.eevee,.gengar,.charmander{
+    position: absolute;
+    z-index: 1;
+    height: auto;
+}
+
+.charmander{
+    // width: 650px;
+    width: 45%;
+    bottom: 0;
+}
+
+.gengar{
+    // width: 250px;
+    width: 20%;
+    right: 0;
+    top: 30%;
+    left: 50%;
+}
+
+.eevee{
+    width: 10%;
+    right:0;
+    z-index: 10;
+    top: 50%;
+    left: 47%;
+}

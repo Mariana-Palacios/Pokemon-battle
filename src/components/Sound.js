@@ -1,16 +1,14 @@
-import React, {useState} from 'react';
+// import React, {useState} from 'react';
 import useSound from 'use-sound'
 import pokemonMp3 from '../audio/pokemon.mp3'
-import chooseMp3 from '../audio/chooseSound.mp3'
-import Generation from './Pokemon/Generation'
-import { BsVolumeMuteFill, BsVolumeUpFill } from 'react-icons/bs';
+// import Generation from './Pokemon/Generation'
 
-const Music = ({change}) =>{
-    const [volume, setVolume] = useState(true)
-    const [play, { stop }] = useSound(change?pokemonMp3:chooseMp3 )
+const Sound = (change,turner) =>{
+    // const [volume, setVolume] = useState(true)
+    const [play, { stop }] = useSound(pokemonMp3)
     const playMusic = () =>{
-      setVolume(!volume)
-      if(volume){
+      // setVolume(!volume)
+      if(turner){
         play()
       }else{
         stop()
@@ -19,15 +17,14 @@ const Music = ({change}) =>{
     // play()
     if(change){
       return (
-        <button onClick={playMusic} className='sound'>
-          {volume?<BsVolumeMuteFill/>:<BsVolumeUpFill/>}
-        </button>
+        playMusic()
       )
     }else{
+      console.log('estoy sonando')
       return(
-        <Generation music={play}/>
+        play()
       )
     }
 }
 
-export default Music;
+export default Sound;
