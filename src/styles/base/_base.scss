@@ -116,6 +116,10 @@
         color: white;
         @include pixel-box($corner-size: 1, $border-size: 4px, $background-color:#232323)
     }
+    .simple-pixel-button:hover{
+        color: #232323;
+        @include pixel-box($corner-size: 1, $border-size: 4px, $background-color:white)
+    }
 
     button{
         cursor: pointer;

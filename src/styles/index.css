@@ -1253,63 +1253,86 @@
   background-color: #161616;
 }
 
+.simple-pixel-button:hover {
+  color: #232323;
+  border-style: solid;
+  border-width: 4px;
+  border-color: #cccccc;
+  border-image-slice: 2;
+  border-image-width: 1;
+  border-image-outset: 0;
+  border-image-source: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6'><path d='M0 2h2v2H0zM2 0h2v2H2zM4 2h2v2H4zM2 4h2v2H2z' fill='%23cccccc' /></svg>");
+  position: relative;
+  background-color: white;
+}
+
+@supports (border-image-source: none) {
+  .simple-pixel-button:hover {
+    border-radius: 14px;
+  }
+}
+
+.simple-pixel-button:hover::after {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: inset -4px -4px #e6e6e6;
+          box-shadow: inset -4px -4px #e6e6e6;
+}
+
+.simple-pixel-button:hover:hover, .simple-pixel-button:hover:focus {
+  background-color: #f2f2f2;
+}
+
 button {
   cursor: pointer;
 }
 
-.background:after {
-  content: ' ';
-  border-top: 100vh solid black;
-  border-right: 100vw solid transparent;
-  width: 0;
+.main {
   position: absolute;
-  top: 0;
-  z-index: -1;
-}
-
-.container_pokemon {
-  position: relative;
-  background-color: aqua;
-  width: 60vw;
-  height: 100vh;
+  top: 50%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.container_pokemon-up {
-  position: relative;
-  background-color: crimson;
-  height: 50vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 50%;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-}
-
-.eevee, .gengar, .charmander {
-  position: absolute;
-  z-index: 1;
   height: auto;
 }
 
-.charmander {
-  width: 45%;
+.social {
+  position: absolute;
   bottom: 0;
+  right: 0;
+  padding: 20px;
+  cursor: pointer;
 }
 
-.gengar {
-  width: 20%;
-  right: 0;
-  top: 30%;
-  left: 50%;
+.social .icon {
+  width: 30px;
+  height: auto;
+  margin-left: 10px;
 }
 
-.eevee {
-  width: 10%;
-  right: 0;
-  z-index: 10;
+.information {
+  position: absolute;
   top: 50%;
-  left: 47%;
+  right: 0;
+  left: 70%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.information .simple-pixel-button {
+  padding: 30px;
+  font-size: 25px;
+}
+
+.background {
+  width: 50%;
+  height: 100vh;
 }
 
 .nav {
