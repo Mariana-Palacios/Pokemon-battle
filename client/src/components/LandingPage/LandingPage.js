@@ -23,11 +23,11 @@ const LandingPage = () => {
     <div className=''>
       <img src={background} alt='background' className='background'/>
       <img src={main} alt='pokemon' className='main'/>
-      {/* <section className='information'>
+      <section className='information'>
         <button className='simple-pixel-button'>
           Let's started
         </button>
-      </section> */}
+      </section>
       <div className='social flex'>
         <BsLinkedin className='icon'/>
         <BsGithub className='icon'/>
