@@ -1,6 +1,6 @@
-import ReactDOM from 'react-dom/client';
+// import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './styles/index.css'
+// import '../styles/index.css'
 // import Nav from './components/Nav/Nav'
 // import PokemonCore from './components/Pokemon/PokemonCore';
 // import Generation from './components/Pokemon/Generation';
@@ -8,7 +8,7 @@ import LandingPage from './components/LandingPage/LandingPage';
 
 
 
-const Main = () => {
+const HomePage = () => {
   return (
     <div >
       <LandingPage/>
@@ -27,6 +27,6 @@ const Main = () => {
 }
 
 
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Main />);
+export default HomePage
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(<Main />);

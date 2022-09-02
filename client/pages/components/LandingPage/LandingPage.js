@@ -1,11 +1,7 @@
-import React from 'react';
-// import { SiPokemon } from "react-icons/si";
-// import charmander from '../../img/landing/6.gif'
-// import gengar from '../../img/landing/94.gif'
-// import eevee from '../../img/landing/133.gif'
-import main from '../../img/landing/main.png'
-import background from '../../img/landing/Group1.png' 
-// BsGithub
+// import React from 'react';
+import Image from 'next/image'
+import main from '../../../public/img/landing/main.png'
+import background from '../../../public/img/landing/Group1.png' 
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 const LandingPage = () => {
@@ -21,8 +17,8 @@ const LandingPage = () => {
     //   </div>
     // </div>
     <div className=''>
-      <img src={background} alt='background' className='background'/>
-      <img src={main} alt='pokemon' className='main'/>
+      <Image src={background} alt='background' className='background'/>
+      <Image src={main} alt='pokemon' className='main'/>
       <section className='information'>
         <button className='simple-pixel-button'>
           Let's started
