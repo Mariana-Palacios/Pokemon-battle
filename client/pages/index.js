@@ -25,15 +25,19 @@ const LandingPage = () => {
         <Image src={main} alt='pokemon' max-height = '100%' />
       </div>
       <section className='information'>
-        <Link href="./nav">
+        <Link href="/audioPlayer">
           <button className='simple-pixel-button'>
             Let's started
           </button>
         </Link>
       </section>
       <div className='social flex'>
-        <BsLinkedin className='icon'/>
-        <BsGithub className='icon'/>
+        <Link href='https://www.linkedin.com/in/mariana-palacios-9b1956236/'>
+          <BsLinkedin className='icon'/>
+        </Link>
+        <Link href='https://github.com/Mariana-Palacios'>
+          <BsGithub className='icon'/>
+        </Link>
       </div>
     </div>
   )

@@ -1340,6 +1340,20 @@ button {
   background-size: cover;
 }
 
+@media screen and (max-width: 800px) {
+  .background {
+    width: 100vw !important;
+    height: 70vh !important;
+  }
+  .pokemon {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 80% !important;
+  }
+}
+
 .nav {
   text-align: center;
   background-color: black;
