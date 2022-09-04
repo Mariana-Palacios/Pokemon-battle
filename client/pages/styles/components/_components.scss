@@ -1,0 +1,29 @@
+// Components
+@import '../../home/landingPage';
+@import '../../components/nav/nav';
+@import '../../Pokemon/Pokemon/pokemon';
+@import '../../Pokemon/PokemonChoose/pokemonChoose';
+@import './sound';
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.portrait {
+    height: 80px;
+    width: 30px;
+    background-color: red;
+}
+
+.landscape {
+    height: 30px;
+    width: 80px;
+    background-color: blue;
+}
+
+.square {
+    height: 75px;
+    width: 75px;
+    background-color: green;
+}

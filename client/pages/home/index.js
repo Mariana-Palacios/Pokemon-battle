@@ -1,7 +1,7 @@
-// import React from 'react';
+import Link from 'next/link'
 import Image from 'next/image'
-import main from '../../../public/img/landing/main.png'
-import background from '../../../public/img/landing/Group1.png' 
+import main from '../../public/img/landing/main.png'
+// import background from '../../public/img/landing/Group1.png' 
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 const LandingPage = () => {
@@ -16,13 +16,19 @@ const LandingPage = () => {
     //     </div>
     //   </div>
     // </div>
-    <div className=''>
-      <Image src={background} alt='background' className='background'/>
-      <Image src={main} alt='pokemon' className='main'/>
+    <div>
+      <div className='background'>
+        {/* <Image src={background} alt='background' max-width='100%' max-height = '100%'/> */}
+      </div>
+      <div className='pokemon'>
+        <Image src={main} alt='pokemon' max-height = '100%' />
+      </div>
       <section className='information'>
-        <button className='simple-pixel-button'>
-          Let's started
-        </button>
+        <Link href="./nav">
+          <button className='simple-pixel-button'>
+            Let's started
+          </button>
+        </Link>
       </section>
       <div className='social flex'>
         <BsLinkedin className='icon'/>

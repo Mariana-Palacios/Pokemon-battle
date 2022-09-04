@@ -1,6 +1,6 @@
 // import React, {useState} from 'react';
 import useSound from 'use-sound'
-import pokemonMp3 from '../audio/pokemon.mp3'
+import pokemonMp3 from '../public/audio/chooseSound.mp3'
 // import Generation from './Pokemon/Generation'
 
 const Sound = (change,turner) =>{

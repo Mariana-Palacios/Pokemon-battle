@@ -1,32 +1,42 @@
-// import ReactDOM from 'react-dom/client';
-import 'bootstrap/dist/css/bootstrap.min.css';
-// import '../styles/index.css'
-// import Nav from './components/Nav/Nav'
-// import PokemonCore from './components/Pokemon/PokemonCore';
-// import Generation from './components/Pokemon/Generation';
-import LandingPage from './components/LandingPage/LandingPage';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import Link from 'next/link'
+import Image from 'next/image'
+import main from '../public/img/landing/main.png'
+// import background from '../../public/img/landing/Group1.png' 
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 
-
-
-const HomePage = () => {
-  return (
-    <div >
-      <LandingPage/>
-      {/* <Nav/>
-      <Generation/>
-      <div className='flex flex-j-c flex-f-w'>
-        <PokemonCore/>
-        <PokemonCore/>
-        <PokemonCore/>
-        <PokemonCore/>
-        <PokemonCore/>
-        <PokemonCore/>
-      </div> */}
+const LandingPage = () => {
+  return(
+    // <div className='background '>
+    //   <SiPokemon className='logo'/>
+    //   <div className='container_pokemon'>
+    //     <img src={charmander} alt='background' className='charmander'/>
+    //     <div className='container_pokemon-up'>
+    //       <img src={eevee} alt='background' className='eevee'/>
+    //       <img src={gengar} alt='background' className='gengar'/>
+    //     </div>
+    //   </div>
+    // </div>
+    <div>
+      <div className='background'>
+        {/* <Image src={background} alt='background' max-width='100%' max-height = '100%'/> */}
+      </div>
+      <div className='pokemon'>
+        <Image src={main} alt='pokemon' max-height = '100%' />
+      </div>
+      <section className='information'>
+        <Link href="./nav">
+          <button className='simple-pixel-button'>
+            Let's started
+          </button>
+        </Link>
+      </section>
+      <div className='social flex'>
+        <BsLinkedin className='icon'/>
+        <BsGithub className='icon'/>
+      </div>
     </div>
   )
 }
-
-
-export default HomePage
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(<Main />);
+  
+export default LandingPage;
