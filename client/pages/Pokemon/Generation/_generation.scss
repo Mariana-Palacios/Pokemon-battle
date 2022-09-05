@@ -15,6 +15,7 @@
     h1{
         text-align: center;
         font-weight: bold;
+        font-size:20px;
     }
     h1{
         font-family: $sarpanch;
@@ -26,17 +27,13 @@
     }
     .generation{
         margin: 20px;
-        img{
-            height: 35px;
-            width: 35px;
-        }
     }
     .generation:hover{
         cursor: pointer;
         h2{
             color: black;
         }
-        img{
+        .img{
             animation: float 0.4s ease-in-out ;
         }
     }

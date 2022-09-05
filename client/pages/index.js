@@ -25,7 +25,7 @@ const LandingPage = () => {
         <Image src={main} alt='pokemon' max-height = '100%' />
       </div>
       <section className='information'>
-        <Link href="/audioPlayer">
+        <Link href="./Pokemon/Generation">
           <button className='simple-pixel-button'>
             Let's started
           </button>

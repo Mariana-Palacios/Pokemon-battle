@@ -1,5 +1,6 @@
 import React, {useState, useRef} from 'react'
-import chooseSound from './chooseSound.mp3'
+import chooseSound from '../../../public/audio/chooseSound.mp3'
+// import chooseSound from '../../../public/audio/chooseSound.mp3'
 
 const AudioPlayer = () =>{
     //state
