@@ -1,6 +1,6 @@
 import React, { useState} from 'react';
-import Pokemon from './Pokemon';
-import PokemonChoose from './PokemonChoose';
+import Pokemon from '../Pokemon/Pokemon';
+import PokemonChoose from '../PokemonChoose/PokemonChoose';
 
 const PokemonCore = () =>{
     const [name,setName] = useState("")

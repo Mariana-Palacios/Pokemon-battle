@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Sarpanch&display=swap");
 @import url("//db.onlinewebfonts.com/c/3ada9815c06d2619d52d16a5601c96b2?family=Early+GameBoy");
 @import url("https://fonts.googleapis.com/css2?family=Sarpanch&display=swap");
+
 .pixel-borders {
   position: relative;
   display: inline-block;
@@ -1292,7 +1293,7 @@ button {
   cursor: pointer;
 }
 
-.pokemon {
+.pokemon-main {
   position: absolute;
   z-index: 10;
   top: 50%;
@@ -1361,15 +1362,20 @@ button {
   padding: 0px 5vh;
 }
 
-.nav .icon {
+.nav .sound {
+  background-color: black;
+  border-color: none;
+}
+
+.nav .icon, .nav .sound {
   font-size: 10vh;
   color: white;
 }
 
 .pokemon {
   margin: 10px;
-  padding: 20px;
-  width: 230px;
+  padding: 30px;
+  position: static;
 }
 
 .pokemon .type {
@@ -1568,40 +1574,7 @@ button {
           box-shadow: none;
 }
 
-.sound {
-  background-color: transparent;
-  border: 1px solid transparent;
-  outline: none;
-  cursor: pointer;
-}
-
-.sound svg {
-  padding: 0;
-  height: 30px;
-  width: 30px;
-  color: white;
-}
-
-img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.portrait {
-  height: 80px;
-  width: 30px;
-  background-color: red;
-}
-
-.landscape {
-  height: 30px;
-  width: 80px;
-  background-color: blue;
-}
-
-.square {
-  height: 75px;
-  width: 75px;
-  background-color: green;
+.pokemons {
+  position: static !important;
 }
 /*# sourceMappingURL=index.css.map */

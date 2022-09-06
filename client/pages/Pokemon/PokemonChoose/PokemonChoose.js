@@ -1,6 +1,6 @@
 import DropdownButton from 'react-bootstrap/DropdownButton'
 import Dropdown from 'react-bootstrap/Dropdown'
-import Pokemon from './Pokemon'
+import Pokemon from '../Pokemon/Pokemon'
 
 const PokemonChoose = ({changeBoolean}) =>{
     let pokedex = []

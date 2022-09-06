@@ -39,7 +39,6 @@
     text-align: center;
 }
 
-
     .bug{
         @include pixel-box($corner-size: 1, $border-size: 4px, $background-color:$bug)
     }
@@ -85,8 +84,7 @@
     .rock{
         // @include pixel-box($corner-size: 1, $border-size: 4px, $background-color:$rock)
         @include pixel-box($corner-size: 1, $border-size: 1px, $background-color: $rock);
-    }
-          
+    }      
     .steel{
         @include pixel-box($corner-size: 1, $border-size: 4px, $background-color:$steel)
     }
@@ -98,7 +96,6 @@
     }
 
     .simple-pixel-border,.simple-pixel-border-with-out-hover{
-        // @include pixel-borders()
         @include pixel-box($corner-size: 1, $border-size: 4px, $background-color:white)
     }
     .simple-pixel-border:hover{

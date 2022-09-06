@@ -20,7 +20,7 @@ const LandingPage = () => {
       <div className='background'>
         {/* <Image src={background} alt='background' max-width='100%' max-height = '100%'/> */}
       </div>
-      <div className='pokemon'>
+      <div className='pokemon-main'>
         <Image src={main} alt='pokemon' max-height = '100%' />
       </div>
       <section className='information'>

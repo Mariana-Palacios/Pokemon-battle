@@ -1,22 +1,26 @@
 import { SiPokemon } from "react-icons/si";
 import { BsVolumeMuteFill, BsVolumeUpFill } from 'react-icons/bs';
-import React, {useState} from 'react';
-// import Sound from '../../Sound' 
+import React, {useState, useRef} from 'react';
+import chooseSound from '../../../public/audio/pokemon.mp3'
 
 const Nav = () => {
+  //state
   const [icon, setIcon] = useState(true)
-  const changeBoolean = () =>{
-    // return setIcon(!icon)
-    return console.log('hi')
+
+  //references 
+  const audioPlayer = useRef()
+
+  const togglePlay= () =>{
+    setIcon(!icon);
+    icon?audioPlayer.current.play():audioPlayer.current.pause()
   }
     return (
-      // <nav className="nav flex flex-j-s-b">
       <nav className="nav flex flex-j-s-b">
         <SiPokemon className="icon"/>
-        {/* <Sound change={true}/> */}
-        <button onClick={changeBoolean()} className='sound'>
+        <div onClick={togglePlay} className='sound'>
+          <audio ref={audioPlayer} src={chooseSound} preload="metadata"></audio>
           {icon?<BsVolumeMuteFill/>:<BsVolumeUpFill/>}
-        </button>
+        </div>
       </nav>
     );
   }
