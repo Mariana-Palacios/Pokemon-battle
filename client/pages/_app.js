@@ -1,4 +1,5 @@
 import '../pages/styles/index.css'
+// import '../'
 import Nav from './components/nav/nav'
 // pages/_app.js
 

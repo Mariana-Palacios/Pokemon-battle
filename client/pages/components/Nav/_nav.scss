@@ -1,17 +1,29 @@
-// @import '../../';
-
 .nav{
     text-align: center;
     background-color: black;
     height: 10vh;
     padding: 0px 5vh;
-    .sound{
-        background-color: black;
+    &__sound{
+        border-radius: 50%;
+        padding: 5px;
         border-color: none;
-        
+        &--volume{
+            width: 30px;
+            height: auto;
+        }
     }
-    .icon,.sound{
+    &__sound:hover{
+        background-color: white;
+        color: black;
+        cursor: pointer;
+    }
+    &__icon{
         font-size: 10vh;
+    }
+    &__icon:hover{
+        cursor: pointer;
+    }
+    &__icon,&__sound{
         color: white;
     }
 }

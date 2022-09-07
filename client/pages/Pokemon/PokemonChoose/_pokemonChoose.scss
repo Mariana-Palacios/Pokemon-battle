@@ -20,8 +20,9 @@
 }
 
 .dropdown-toggle{
-  margin:0px 20px;
+  margin:0px 10px;
   width: 200px;
+  height: 50px;
   color: white;
   @include pixel-box($corner-size: 1, $border-size: 4px, $background-color:#232323);
 }

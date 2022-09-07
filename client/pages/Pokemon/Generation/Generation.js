@@ -6,29 +6,22 @@ import choose from '../../../public/audio/chooseSound.mp3'
 const Generation = () =>{
     const imageNames = [1,2,3,4,5]
     //references 
-    const audioPlayer = useRef()
-
-    // 
-    const [chooseSound, setChooseSound] = useState(jump)
-
+    const JumpAudioPlayer = useRef()
+    const ChoseAudioPlayer = useRef()
 
     const togglePlay= () =>{
-        audioPlayer.current.pause()
-        setChooseSound(choose)
-        // audioPlayer.current.load()
-        audioPlayer.current.play()
-        
+        ChoseAudioPlayer.current.play()
+        // Problem with click button and here sound
     }
 
     const hoverPlay= () =>{
-        audioPlayer.current.pause()
-        setChooseSound(jump)
-        audioPlayer.current.load()
-        audioPlayer.current.play()
+        JumpAudioPlayer.current.pause()
+        JumpAudioPlayer.current.load()
+        JumpAudioPlayer.current.play()
     }
 
     const outPlay= () =>{
-        audioPlayer.current.load()
+        JumpAudioPlayer.current.load()
     }
 
     return (
@@ -36,8 +29,9 @@ const Generation = () =>{
             <h1>Choose the generation</h1>
             <div className='flex flex-j-c'>
                 {imageNames.map((image, i) => 
-                <section key={i}  className='generation flex' onMouseOver={hoverPlay} onClick={togglePlay} onMouseOut={outPlay}>
-                    <audio ref={audioPlayer} src={chooseSound} preload="metadata"></audio>
+                <section key={i}  className='generation flex' onMouseOver={hoverPlay} onMouseOut={outPlay} onClick={togglePlay} >
+                    <audio ref={JumpAudioPlayer} src={jump} preload="metadata"></audio>
+                    <audio ref={ChoseAudioPlayer} src={choose} preload="metadata"></audio>
                     <div className='img'>
                         <Image src={require(`../../../public/img/trainer/${image}.png`)} alt={`generation ${image}`} width='35px' height = '35px'/>
                     </div>

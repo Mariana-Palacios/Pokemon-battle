@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Sarpanch&display=swap");
 @import url("//db.onlinewebfonts.com/c/3ada9815c06d2619d52d16a5601c96b2?family=Early+GameBoy");
 @import url("https://fonts.googleapis.com/css2?family=Sarpanch&display=swap");
-
 .pixel-borders {
   position: relative;
   display: inline-block;
@@ -1293,18 +1292,28 @@ button {
   cursor: pointer;
 }
 
-.pokemon-main {
+.background__pokemonMain {
   position: absolute;
   z-index: 10;
   top: 50%;
-  left: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 50% !important;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 80% !important;
   height: auto;
 }
 
-.social {
+.information__button .simple-pixel-button {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -70%);
+          transform: translate(-50%, -70%);
+  padding: 30px;
+  font-size: 25px;
+}
+
+.information__social {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -1312,24 +1321,14 @@ button {
   cursor: pointer;
 }
 
-.social .icon {
+.information__social .icon {
   width: 30px;
   height: auto;
   margin-left: 10px;
 }
 
-.information {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  left: 70%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.information .simple-pixel-button {
-  padding: 30px;
-  font-size: 25px;
+.information__social .icon:hover {
+  color: green;
 }
 
 .background {
@@ -1362,13 +1361,32 @@ button {
   padding: 0px 5vh;
 }
 
-.nav .sound {
-  background-color: black;
+.nav__sound {
+  border-radius: 50%;
+  padding: 5px;
   border-color: none;
 }
 
-.nav .icon, .nav .sound {
+.nav__sound--volume {
+  width: 30px;
+  height: auto;
+}
+
+.nav__sound:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.nav__icon {
   font-size: 10vh;
+}
+
+.nav__icon:hover {
+  cursor: pointer;
+}
+
+.nav__icon, .nav__sound {
   color: white;
 }
 
@@ -1498,8 +1516,9 @@ button {
 }
 
 .dropdown-toggle {
-  margin: 0px 20px;
+  margin: 0px 10px;
   width: 200px;
+  height: 50px;
   color: white;
   border-style: solid;
   border-width: 4px;
