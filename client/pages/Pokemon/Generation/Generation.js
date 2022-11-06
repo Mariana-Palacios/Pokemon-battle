@@ -1,9 +1,19 @@
 import React, {useState, useRef} from 'react'
+import { useDispatch, useSelector } from "react-redux";
+import { changeGeneration } from '../../../features/pokemonTeam/pokemonTeamSlice'
 import Image from 'next/image'
 import jump from '../../../public/audio/jump.mp3'
 import choose from '../../../public/audio/chooseSound.mp3'
 
 const Generation = () =>{
+    const pokemonTeam = useSelector((state) => state.pokemonTeam);
+    const dispatch = useDispatch();
+
+    //  
+    const handleChangeGeneration = ( generationValue ) => {
+        dispatch(changeGeneration(generationValue))
+    }
+
     const imageNames = [1,2,3,4,5]
     //references 
     const JumpAudioPlayer = useRef()
@@ -35,7 +45,7 @@ const Generation = () =>{
                     <div className='img'>
                         <Image src={require(`../../../public/img/trainer/${image}.png`)} alt={`generation ${image}`} width='35px' height = '35px'/>
                     </div>
-                    <h2>G{image}</h2>
+                    <h2 onMouseOver={handleChangeGeneration(69)}>G{image}</h2>
                 </section>)}
             </div>
         </div>

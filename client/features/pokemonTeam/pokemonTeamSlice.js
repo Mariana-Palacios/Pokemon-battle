@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-    pokemonTeam:[
+    pokemon:[
         {
             id:1,
             pokedexNumber: null,
@@ -74,9 +74,9 @@ const pokemonTeamSlice = createSlice({
         },
         changeGeneration: (state,action) =>{
             state.generation = action.payload
-        },
+        }
     }
 })
 
-//export const { addPokemon, deletePokemon } = pokemonTeamSlice.actions
+export const { addPokemonInTeam, deletePokemonInTeam, changeGeneration } = pokemonTeamSlice.actions
 export default pokemonTeamSlice.reducer
